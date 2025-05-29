@@ -2,82 +2,181 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>J&M TramitExpress - Tu tiempo vale oro</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J&M TramitExpress - Gestoría Express Online</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #f8fbff;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      background-color: #e6f2fc;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #004a80;
+    }
+    .hero p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    .cta-button {
+      background-color: #007acc;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      margin-top: 1.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .trust-logos {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .trust-logos img {
+      height: 40px;
+      max-width: 100px;
+      object-fit: contain;
+      opacity: 0.8;
+    }
+    section {
+      padding: 2rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-box {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .reviews {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-top: 1px solid #ccc;
+    }
+    .review {
+      background: #f2f9ff;
+      border-left: 4px solid #007acc;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #004a80;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="container header-flex">
-      <div class="logo">
-        <img src="logo.png" alt="J&M TramitExpress" />
-        <h1>J&M TramitExpress</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="citas.html">Citas</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
+    <div><strong>J&M TramitExpress</strong></div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h2>Tu cita, en tiempo récord.</h2>
-        <p>Especialistas en gestionar trámites urgentes y difíciles de conseguir.</p>
-        <a href="https://wa.me/34600000000" class="cta-btn" target="_blank">📲 Solicitar por WhatsApp</a>
-      </div>
-    </section>
+  <section class="hero" id="inicio">
+    <h1>Gestiones urgentes en tiempo récord</h1>
+    <p>Solicita tus citas, trámites y documentos oficiales de forma rápida y segura desde tu móvil.</p>
+    <a href="https://wa.me/34613513853" target="_blank">
+      <button class="cta-button">Solicita tu trámite</button>
+    </a>
+    <div class="trust-logos">
+      <img src="https://www.dnielectronico.es/PDFs/logo_dnie.png" alt="DNIe" />
+      <img src="https://www.agenciatributaria.es/static_files/common/img/logoAEAT.gif" alt="AEAT" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png" alt="Google reseñas" />
+    </div>
+  </section>
 
-    <section class="benefits container">
-      <h3>¿Por qué elegirnos?</h3>
-      <div class="grid-3">
-        <div class="card">
-          <h4>⏱ Rápido</h4>
-          <p>Menos de 24 horas para gestionar tu cita.</p>
-        </div>
-        <div class="card">
-          <h4>🧘 Fácil</h4>
-          <p>Nos encargamos de todo el proceso por ti.</p>
-        </div>
-        <div class="card">
-          <h4>🔐 Seguro</h4>
-          <p>Tu información protegida y cifrada.</p>
-        </div>
+  <section id="servicios">
+    <h2>Servicios más demandados</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Citas SEPE</h3>
+        <p>Te conseguimos cita para prestaciones y subsidios en cuestión de horas.</p>
       </div>
-    </section>
-
-    <section class="trust container">
-      <h3>Confianza y seguridad</h3>
-      <div class="trust-logos">
-        <img src="https://img.icons8.com/color/48/000000/ssl.png" alt="SSL Seguro" />
-        <img src="https://img.icons8.com/color/48/000000/gdpr.png" alt="Protección de datos" />
-        <img src="https://img.icons8.com/color/48/000000/ok.png" alt="Servicio Garantizado" />
+      <div class="service-box">
+        <h3>Citas Extranjería</h3>
+        <p>Renovación de NIE, huellas, toma de datos... sin complicaciones.</p>
       </div>
-    </section>
-
-    <section class="cta-section">
-      <div class="container">
-        <h3>¿Necesitas una cita urgente ahora?</h3>
-        <a href="https://wa.me/34600000000" class="cta-btn" target="_blank">📲 Escríbenos ya</a>
+      <div class="service-box">
+        <h3>Declaración de la Renta</h3>
+        <p>Te ayudamos a presentar tu declaración rápidamente desde casa.</p>
       </div>
-    </section>
-  </main>
+      <div class="service-box">
+        <h3>Ayudas y Subvenciones</h3>
+        <p>Solicitamos por ti todas las ayudas disponibles. No dejes pasar oportunidades.</p>
+      </div>
+    </div>
+  </section>
 
-  <a href="https://wa.me/34600000000" class="whatsapp-float" target="_blank" title="Chatea con nosotros">
-    💬
-  </a>
+  <section class="reviews">
+    <h2>Lo que opinan nuestros clientes</h2>
+    <div class="review">
+      <p><strong>María G. (Madrid):</strong> "Me consiguieron cita para extranjería en 24 h. Súper recomendable."</p>
+    </div>
+    <div class="review">
+      <p><strong>José A. (Valencia):</strong> "Fácil, rápido y económico. Ideal para quien no quiere perder tiempo."</p>
+    </div>
+    <div class="review">
+      <p><strong>Lina M. (Barcelona):</strong> "Muy buena atención por WhatsApp. Repetiré sin duda para el trámite de ayuda al alquiler."</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto directo</h2>
+    <p>Escríbenos por WhatsApp y cuéntanos tu caso. ¡Estamos disponibles 24/7!</p>
+    <a href="https://wa.me/34613513853" target="_blank">
+      <button class="cta-button">Hablar por WhatsApp</button>
+    </a>
+    <p style="margin-top: 1rem;">O envíanos un email a: <strong>tramites@jymtramitexpress.es</strong></p>
+  </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 J&M TramitExpress · Todos los derechos reservados</p>
-    </div>
+    <p>© 2025 J&M TramitExpress. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
