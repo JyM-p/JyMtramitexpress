@@ -5,8 +5,8 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #f5f9fc;
-  color: #333;
+  background: #f9fbfd;
+  color: #222;
   line-height: 1.6;
 }
 .container {
@@ -15,7 +15,7 @@ body {
   margin: auto;
 }
 header {
-  background: #003366;
+  background: #0052cc;
   color: white;
   padding: 15px 0;
 }
@@ -23,6 +23,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .logo {
   display: flex;
@@ -44,8 +45,8 @@ nav a {
   font-weight: 600;
 }
 .hero {
-  background: #0055a4;
-  color: white;
+  background: #e1efff;
+  color: #003366;
   text-align: center;
   padding: 60px 20px;
   border-bottom-left-radius: 30px;
@@ -68,7 +69,7 @@ nav a {
   text-decoration: none;
 }
 .cta-section {
-  background: #eaf4fb;
+  background: #f0f8ff;
   text-align: center;
   padding: 40px 20px;
   margin-top: 40px;
@@ -93,7 +94,20 @@ nav a {
 }
 .card h4 {
   margin-bottom: 10px;
-  color: #003366;
+  color: #0052cc;
+}
+.trust {
+  padding: 40px 0;
+  text-align: center;
+}
+.trust-logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+.trust-logos img {
+  height: 48px;
 }
 footer {
   background: #003366;
@@ -101,6 +115,19 @@ footer {
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
 }
 @media (max-width: 600px) {
   .hero h2 {
