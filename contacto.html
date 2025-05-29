@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Express Citas</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function validarFormulario(event) {
-            event.preventDefault();
-            alert("Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.");
-        }
-    </script>
 </head>
 <body>
-    <header>
+<header>
+    <div class="container header-container">
         <div class="logo">
             <img src="logo.png" alt="Logo Express Citas">
             <h1>EXPRESS CITAS</h1>
@@ -22,22 +17,25 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="citas.html">Citas</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <section class="contacto">
-            <h2>Contáctanos</h2>
-            <p>Envíanos un mensaje y te responderemos lo antes posible.</p>
-            <form onsubmit="validarFormulario(event)">
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <textarea placeholder="Tu mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+<main class="container" style="text-align:center;">
+    <h2>Contáctanos</h2>
+    <p>Si necesitas ayuda con tus citas o tienes alguna duda, contáctanos sin compromiso.</p>
+    <a class="whatsapp-btn" href="https://wa.me/34600000000" target="_blank">📲 Chatear por WhatsApp</a>
+    <p style="margin-top:20px;">O escríbenos a: <strong>info@expresscitas.com</strong></p>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Express Citas. Todos los derechos reservados.</p>
+    </div>
+</footer>
 </body>
 </html>

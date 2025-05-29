@@ -5,19 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Express Citas</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        details summary {
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        details {
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
 <body>
-    <header>
+<header>
+    <div class="container header-container">
         <div class="logo">
             <img src="logo.png" alt="Logo Express Citas">
             <h1>EXPRESS CITAS</h1>
@@ -26,52 +17,46 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="citas.html">Citas</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <section>
-            <h2>Servicios Disponibles</h2>
-            <details>
-                <summary>Gestión de citas</summary>
-                <ul>
-                    <li>DNI / Pasaporte</li>
-                    <li>Extranjería (huellas, toma de datos, renovación NIE)</li>
-                    <li>Cita previa Agencia Tributaria</li>
-                    <li>Cita ITV</li>
-                </ul>
-            </details>
+<main class="container">
+    <h2 style="text-align:center;">Nuestros Servicios</h2>
+    <div class="feature-card">
+        <h3>🗓 Gestión de Citas</h3>
+        <ul>
+            <li>Citas para DNI / Pasaporte</li>
+            <li>Extranjería: huellas, renovación NIE</li>
+            <li>ITV, Agencia Tributaria, Ayuntamiento</li>
+        </ul>
+    </div>
+    <div class="feature-card">
+        <h3>📄 Trámites Online</h3>
+        <ul>
+            <li>Subsidios y ayudas del SEPE</li>
+            <li>Becas MEC, IMV y más</li>
+            <li>Entrega telemática de documentos</li>
+        </ul>
+    </div>
+    <div class="feature-card">
+        <h3>📦 Preparación de Expedientes</h3>
+        <ul>
+            <li>Revisión de documentación</li>
+            <li>Subida a sede electrónica</li>
+            <li>Confirmación y seguimiento</li>
+        </ul>
+    </div>
+</main>
 
-            <details>
-                <summary>Trámites y solicitudes</summary>
-                <ul>
-                    <li>Subsidios y prestaciones del SEPE</li>
-                    <li>Solicitud del Ingreso Mínimo Vital</li>
-                    <li>Ayudas al alquiler</li>
-                    <li>Becas MEC y otras ayudas educativas</li>
-                </ul>
-            </details>
-
-            <details>
-                <summary>Preparación y entrega de expedientes</summary>
-                <ul>
-                    <li>Recopilación y revisión de documentos</li>
-                    <li>Presentación online en sedes electrónicas</li>
-                    <li>Seguimiento y confirmación de envío</li>
-                </ul>
-            </details>
-
-            <details>
-                <summary>Otros servicios</summary>
-                <ul>
-                    <li>Asistencia por WhatsApp o correo</li>
-                    <li>Recordatorio de fechas importantes</li>
-                    <li>Reprogramación de citas perdidas</li>
-                </ul>
-            </details>
-        </section>
-    </main>
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Express Citas. Todos los derechos reservados.</p>
+    </div>
+</footer>
 </body>
 </html>
