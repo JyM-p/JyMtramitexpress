@@ -7,9 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header><img src="logo.png" alt="Asesoría Express" class="logo"></header>
 
 <nav>
-  <ul>
+  <div class="menu-toggle" onclick="toggleMenu()">☰ Menú</div>
+  <ul id="nav-list">
     <li><a href="index.html">Inicio</a></li>
     <li><a href="citas.html">Citas</a></li>
     <li><a href="tramites.html">Trámites</a></li>
@@ -19,6 +21,8 @@
   </ul>
 </nav>
 
+<main>
+<img src="https://cdn.pixabay.com/photo/2016/11/29/02/09/handshake-1868750_960_720.jpg" alt="Confianza" class="decorative">
 
 <h1>Preguntas frecuentes (FAQ)</h1>
 <ul>
@@ -29,6 +33,7 @@
   <li><strong>¿Qué pasa si no puedo asistir?</strong> Podemos ayudarte a reprogramarla si nos avisas con antelación.</li>
 </ul>
 
+</main>
 
 <!-- Botón flotante de WhatsApp -->
 <a href="https://wa.me/34613513853" class="whatsapp-float" target="_blank" aria-label="Chatea con nosotros por WhatsApp">
@@ -42,6 +47,14 @@
   z-index: 1000;
 }
 </style>
+
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById('nav-list');
+  menu.classList.toggle('active');
+}
+</script>
 
 </body>
 </html>

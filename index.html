@@ -7,9 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header><img src="logo.png" alt="Asesoría Express" class="logo"></header>
 
 <nav>
-  <ul>
+  <div class="menu-toggle" onclick="toggleMenu()">☰ Menú</div>
+  <ul id="nav-list">
     <li><a href="index.html">Inicio</a></li>
     <li><a href="citas.html">Citas</a></li>
     <li><a href="tramites.html">Trámites</a></li>
@@ -19,12 +21,15 @@
   </ul>
 </nav>
 
+<main>
+<img src="https://cdn.pixabay.com/photo/2016/11/29/02/09/handshake-1868750_960_720.jpg" alt="Confianza" class="decorative">
 
 <h1>Bienvenido a Asesoría Express</h1>
 <p>Te ayudamos a conseguir <strong>citas urgentes</strong> y realizar <strong>trámites sencillos</strong> sin complicaciones, en toda España.</p>
 <p>Rápido, fácil y por WhatsApp. Empieza ahora:</p>
 <a href="https://wa.me/34613513853" target="_blank"><button style="padding: 10px 20px;">Solicita tu servicio</button></a>
 
+</main>
 
 <!-- Botón flotante de WhatsApp -->
 <a href="https://wa.me/34613513853" class="whatsapp-float" target="_blank" aria-label="Chatea con nosotros por WhatsApp">
@@ -38,6 +43,14 @@
   z-index: 1000;
 }
 </style>
+
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById('nav-list');
+  menu.classList.toggle('active');
+}
+</script>
 
 </body>
 </html>
