@@ -1,56 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio - Asesoría Express</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Citas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><img src="logo.png" alt="Asesoría Express" class="logo"></header>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Express Citas">
+            <h1>EXPRESS CITAS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-  <div class="menu-toggle" onclick="toggleMenu()">☰ Menú</div>
-  <ul id="nav-list">
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="citas.html">Citas</a></li>
-    <li><a href="tramites.html">Trámites</a></li>
-    <li><a href="packs.html">Packs</a></li>
-    <li><a href="faq.html">FAQ</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
-  </ul>
-</nav>
+    <main>
+        <section class="presentacion">
+            <h2>Gestión de Citas Fácil y Rápida</h2>
+            <p>Agendamos tus citas de manera eficiente para que puedas concentrarte en lo importante.</p>
+            <a href="#servicios" class="btn">Consultar</a>
+        </section>
 
-<main>
-<img src="https://cdn.pixabay.com/photo/2016/11/29/02/09/handshake-1868750_960_720.jpg" alt="Confianza" class="decorative">
-
-<h1>Bienvenido a Asesoría Express</h1>
-<p>Te ayudamos a conseguir <strong>citas urgentes</strong> y realizar <strong>trámites sencillos</strong> sin complicaciones, en toda España.</p>
-<p>Rápido, fácil y por WhatsApp. Empieza ahora:</p>
-<a href="https://wa.me/34613513853" target="_blank"><button style="padding: 10px 20px;">Solicita tu servicio</button></a>
-
-</main>
-
-<!-- Botón flotante de WhatsApp -->
-<a href="https://wa.me/34613513853" class="whatsapp-float" target="_blank" aria-label="Chatea con nosotros por WhatsApp">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="50" height="50">
-</a>
-<style>
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-</style>
-
-
-<script>
-function toggleMenu() {
-  var menu = document.getElementById('nav-list');
-  menu.classList.toggle('active');
-}
-</script>
-
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Citas urgentes</li>
+                <li>Trámites administrativos</li>
+                <li>Preparación de expedientes</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
